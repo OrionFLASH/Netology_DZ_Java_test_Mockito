@@ -32,7 +32,8 @@ public class Main {
                 new HealthInfo(new BigDecimal("36.65"), new BloodPressure(120, 80)))
         );
 
-        String id2 = patientInfoRepository.add(
+        // Добавляем второго пациента в репозиторий
+        patientInfoRepository.add(
             new PatientInfo("Семен", "Михайлов", LocalDate.of(1982, 1, 16),
                 new HealthInfo(new BigDecimal("36.6"), new BloodPressure(125, 78)))
         );

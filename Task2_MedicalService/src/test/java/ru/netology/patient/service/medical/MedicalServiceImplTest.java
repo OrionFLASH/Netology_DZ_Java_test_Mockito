@@ -232,9 +232,6 @@ public class MedicalServiceImplTest {
         // Когда patientInfoRepository.getById вызывается с patientId, возвращаем patientInfo
         when(patientInfoRepository.getById(patientId)).thenReturn(patientInfo);
 
-        // Создаем ArgumentCaptor для захвата аргументов, переданных в метод send
-        ArgumentCaptor<String> messageCaptor = ArgumentCaptor.forClass(String.class);
-
         // Выполнение тестируемого метода
         // Передаем высокую температуру
         medicalService.checkTemperature(patientId, highTemperature);

@@ -15,7 +15,6 @@ import ru.netology.geo.GeoService;
 import ru.netology.i18n.LocalizationService;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
 /**

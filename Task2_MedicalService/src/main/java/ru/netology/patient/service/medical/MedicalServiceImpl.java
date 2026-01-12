@@ -32,7 +32,6 @@ public class MedicalServiceImpl implements MedicalService {
         // Проверяем, что температура ниже нормы более чем на 1.5 градуса
         if (patientInfo.getHealthInfo().getNormalTemperature().subtract(new BigDecimal("1.5")).compareTo(temperature) > 0) {
             String message = String.format("Warning, patient with id: %s, need help", patientInfo.getId());
-            System.out.printf("Warning, patient with id: %s, need help", patientInfo.getId());
             alertService.send(message);
         }
     }
